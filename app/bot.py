@@ -17,4 +17,5 @@ class MoodBot(ActivityHandler):
     ):
         for member_added in members_added:
             if member_added.id != turn_context.activity.recipient.id:
-                await turn_context.send_activity("Welcome in MoodBot!")
+                await turn_context.send_activity("Welcome in MoodBot! Send me a photo of yourself and I will "
+                                                 "recommend entertainment products to suit your mood")
